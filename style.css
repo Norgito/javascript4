@@ -1,8 +1,19 @@
-.fondo{
-    background-color: cornflowerblue;
-    text-align: center;
-    font-size: larger;
-    justify-content: center;
-    padding: 40px;
+.fondo {
+  text-align: center;
+  font-size: larger;
+  justify-content: center;
+  padding: 40px;
 }
 
+h1 {
+  color: white;
+}
+html {
+  background-size: cover;
+  background: #12c2e9;
+  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+
+  height: 100%;
+  overflow: hidden;
+}
