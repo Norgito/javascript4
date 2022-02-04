@@ -1,19 +1,114 @@
-.fondo {
-  text-align: center;
-  font-size: larger;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1{
+  font-size: 3.8rem;
+  font-weight: 700;
+  
+}
+
+h2{
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+h3{
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+h4{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h5{
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+
+h6{
+  color: #D8D8D8;
+}
+
+button{
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: #1d1d1d;
+  color: aliceblue;
+  padding: 13px 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+button:hover{
+  background-color: coral;
+}
+
+.navbar {
+  font-size: 16px;
+  top: 0;
+  left: 0;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  padding: 0 20px;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i:hover{
+  color: coral;
+}
+
+.navbar i{
+  font-size: 1.2rem;
+  padding: 0 7px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.home {
+  display: flex;
+  position: relative;
   justify-content: center;
-  padding: 40px;
+  flex-direction: column;
+  justify-content: center;
+  
 }
 
-h1 {
-  color: white;
+.home span{
+  color: coral;
 }
-html {
-  background-size: cover;
-  background: #12c2e9;
-  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
-  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
 
-  height: 100%;
-  overflow: hidden;
+.textobanner {
+  position: absolute;
+  align-self: center;
+  text-align: center;
+  @media only screen and (max-width:768px) {
+    font-size: 4rem;
+    }
+}
+
+
+.bestsellers {
+  text-align:center;
+  margin: 20px;
 }
