@@ -1,4 +1,4 @@
-//Entrega 04
+//Entrega 05
 //E-commerce
 
 const categorias = ["ropa", "accesorio", "calzado"];
@@ -22,46 +22,47 @@ products.push(new Item(6, "Lentes", 7000, categorias[1]));
 products.push(new Item(7, "Ojotas", 2700, categorias[2]));
 console.log(products);
 
-//Filtro Categoria
-let userFilter1 = prompt("FILTRO: SELECCIONE CATEGORIA\n\nRopa\nAccesorio\nCalzado");
-let filtrados = products.filter((Item) => Item.categoria == userFilter1.toUpperCase());
-console.log(filtrados);
+// Modificar Banner Text -> Español
+let tituloEs = document.getElementById("tituloEs");
+console.log(tituloEs.innerHTML);
 
-let mensaje1 = "Los Productos Encontrados son:\n\n";
+tituloEs.innerHTML = "Accesorios Masculino";
 
-if (filtrados.length > 0) {
-  for (const Item of filtrados) {
-    mensaje1 =
-      mensaje1 +
-      "Producto: " +
-      Item.nombre +
-      "\nPrecio: $" +
-      Item.precio +
-      "\n\n";
-  }
-  alert(mensaje1);
-} else {
-  alert("Producto no encontrado");
+let btnEs = document.getElementById("btnEs");
+console.log(btnEs.innerHTML);
+
+btnEs.innerHTML = "Comprar";
+
+// Crear Elementos
+//01 - Best Sellers h1
+let divText = document.getElementById("bsText");
+
+let divCat = document.createElement("h1");
+divCat.innerHTML = "Best Sellers<hr>";
+divText.appendChild(divCat);
+
+//02 - Best Sellers Items
+let divProd = document.getElementById("bsItems");
+
+for (const Item of products) {
+  let divProducts = document.createElement("div");
+
+  divProducts.innerHTML = `<h2 id='textProd'>${Item.nombre}</h2>
+                           <h3>Precio: $ ${Item.precio}</h3>
+                           <button id='btnShop'>Comprar</button>`;
+
+  divProd.append(divProducts);
 }
 
-//Filtro Precio
-let userFilter2 = prompt("FILTRO: Precio menor o igual\n\nIngrese monto");
-const cheap = products.filter((Item) => Item.precio <= userFilter2);
-console.log(cheap);
+document.querySelector("#bsText").innerHTML +=
+  '<HR><h3 style="color: red" color: red;"">NOW WITH 30% OFF!</h3><hr><HR>';
 
-let mensaje2 = "Los Productos Encontrados son:\n\n";
+/* //Select Items
+const colores = ['Rojo','Azul','Negro'];
 
-if (cheap.length > 0) {
-  for (const Item of cheap) {
-    mensaje2 =
-      mensaje2 +
-      "Producto: " +
-      Item.nombre +
-      "\nPrecio: $" +
-      Item.precio +
-      "\n\n";
-  }
-  alert(mensaje2);
-} else {
-  alert("Producto no encontrado");
-}
+let idSelect = document.getElementById('idSelect');
+console.log(idSelect);
+
+for (const color of colores) {
+  idSelect.innerHTML +="<option>"+color+"</option>";
+} */

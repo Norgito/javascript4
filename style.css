@@ -13,17 +13,20 @@ body {
 h1{
   font-size: 3.8rem;
   font-weight: 700;
-  
+  text-align: center;
 }
 
 h2{
   font-size: 2.8rem;
   font-weight: 600;
+  text-align: center;
+  color: coral;
 }
 
 h3{
   font-size: 1.4rem;
   font-weight: 800;
+  text-align: center;
 }
 
 h4{
@@ -98,6 +101,7 @@ button:hover{
   color: coral;
 }
 
+
 .textobanner {
   position: absolute;
   align-self: center;
@@ -108,7 +112,26 @@ button:hover{
 }
 
 
-.bestsellers {
+#bestSeller.h2 {
   text-align:center;
   margin: 20px;
+}
+
+#textProd{
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+#btnShop{
+  width: 100%;
+}
+
+.star{
+  display: flex;
+  justify-content: center;
+  
 }
