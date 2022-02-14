@@ -49,9 +49,20 @@ for (const Item of products) {
 
   divProducts.innerHTML = `<h2 id='textProd'>${Item.nombre}</h2>
                            <h3>Precio: $ ${Item.precio}</h3>
-                           <button id='btnShop'>Comprar</button>`;
+                           <button id="${Item.id}" class="btnShop">Comprar</button>`;
 
   divProd.append(divProducts);
+}
+
+let botones = document.getElementsByClassName('btnShop');
+console.log(botones);
+
+for (const boton of botones) {
+  boton.addEventListener('click',function () {
+    console.log(this.id);
+    let selection = products.find(Item => Item.id == this.id);
+    console.log(selection);
+  })
 }
 
 document.querySelector("#bsText").innerHTML +=
