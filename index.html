@@ -59,24 +59,50 @@
     </nav>
 
     <section class="home container-fluid col-xs-12">
-        <img src="assets/img/banner.jpg-1.png" class="img-fluid" alt="Responsive image">
+        <img src="assets/img/bannershoes.png" class="img-fluid" alt="Responsive image">
+
         <div class="textobanner">
-            <h3 id="tituloEs">ACCESORIES FOR MEN</h3>
-            <h1><span>SUMMER</span> Sale</h1>
+            <h3 id="tituloEs">SPORT SHOES FOR MEN</h3>
+            <h1>SEASON SALE</h1>
+            <h3>UP TO 50% OFF!</h3>
             <button id="btnEs">Shop Now</button>
         </div>
     </section>
+    
+    <section class="productos">
+      
+      <h2 id="bsText" class="mt-5"> Seleccione Producto</h2>
+        <div class="filtroNombre">
+            <h5>Filtrar por Nombre</h5>
+            <input id="filtroNombre" type ='text'>
+            <button id="limpiar">Clear</button>
+         </div>
+  
+    <div id="filtroItems">
 
-    <h1 id="bsText"></h1>
+    </div><hr>
+    </section>
 
-    <div id="bsItems">
-      <div class="star">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
+    <section class="home container col-xs-12 align-items-lg-center p-lg-2">
+         <div id="bsItems" class="row mx-auto">
+      
+         </div>
+    </section>
+    <section class="home container col-xs-12 align-items-lg-center p-lg-2">
+      
+      <div id="carrito" class="row mx-auto">
+   
       </div>
+    </section>
+    <div>
+        <h2 id="bsText2" class="m-5"> Agregar Productos</h2>
+        
+        <form id="registroProducto">
+          <input type="text" placeholder="Nombre del producto">
+          <input type="number" placeholder="Precio del producto">
+          <input type="text" placeholder="Categoria">
+          <input type="submit" id="formbtn">
+        </form><hr>
     </div>
 
     

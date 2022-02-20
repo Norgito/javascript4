@@ -11,37 +11,39 @@ body {
 }
 
 h1{
-  font-size: 3.8rem;
+  font-size: 5rem;
   font-weight: 700;
   text-align: center;
+  color: white;
 }
 
 h2{
-  font-size: 2.8rem;
-  font-weight: 600;
+  font-size: 2.5rem !important;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
   text-align: center;
-  color: coral;
 }
 
 h3{
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 800;
-  text-align: center;
 }
 
 h4{
-  font-size: 1.1rem;
+  font-size: 15px;
   font-weight: 600;
+  color: red;
 }
 
 h5{
-  font-size: 1.5rem;
+  font-size: 1rem !important;
   font-weight: 400;
   color: #1d1d1d;
 }
 
 h6{
-  color: #D8D8D8;
+  color: #999898;
+  font-size: 12px !important;
 }
 
 button{
@@ -59,6 +61,31 @@ button{
 
 button:hover{
   background-color: coral;
+}
+
+
+#formbtn{
+  background-color: black;
+  color: white;
+  width: 80px;
+  height: 28px;
+  border: 0;
+}
+
+#formbtn:hover{
+  background-color: orangered;
+}
+
+#btnEs{
+  border-radius: 20px;
+  color: white;
+  background-color: orangered;
+}
+
+#btnEs:hover{
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(79, 176, 255);
 }
 
 .navbar {
@@ -91,47 +118,73 @@ button:hover{
 .home {
   display: flex;
   position: relative;
-  justify-content: center;
-  flex-direction: column;
-  justify-content: center;
-  
 }
-
-.home span{
-  color: coral;
-}
-
 
 .textobanner {
   position: absolute;
   align-self: center;
-  text-align: center;
+  padding-left: 150px;
   @media only screen and (max-width:768px) {
     font-size: 4rem;
     }
 }
 
+#bsText, #bsText2{
+  color: orangered;
+}
 
 #bestSeller.h2 {
-  text-align:center;
   margin: 20px;
 }
 
-#textProd{
-  font-size: 40px;
-  display: flex;
-  flex-direction: row;
+#carrito .h3{
   text-align: center;
   justify-content: center;
-  padding: 30px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
 }
 
-.btnShop{
-  width: 100%;
+#textProd{
+  font-size: 25px !important;
+  text-align: center !important;
+  color: orangered;
+}
+
+#textPrecio{
+  font-size: 20px !important;
+  color: rgb(79, 176, 255);
+  padding-top: 2px;
+}
+
+#bsItems {
+  text-align: center;
+}
+
+#carrito{
+  text-align: center;
+}
+
+#registroProducto {
+  text-align: center;
 }
 
 .star{
   display: flex;
   justify-content: center;
   
+}
+
+#filtroItems{
+  text-align: right;
+  padding-right: 10px;
+}
+
+.filtroNombre{
+  text-align: right;
+  padding: 10px;
+}
+
+#tituloEs{
+  color: rgb(0, 0, 0);
 }
