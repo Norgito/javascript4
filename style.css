@@ -63,6 +63,10 @@ button:hover{
   background-color: coral;
 }
 
+#images{
+  margin: 3px;
+  justify-content: center;
+}
 
 #formbtn{
   background-color: black;
