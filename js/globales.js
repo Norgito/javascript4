@@ -4,6 +4,8 @@ const carrito = [];
 
 const productosCarrito = document.getElementById('productosCarrito');
 const cantidadCarrito = document.getElementById('cantidad');
+const totalCarritoInterfaz=document.getElementById('totalCarrito');
+
 
 const confirmar = document.getElementById('confirmar');
 

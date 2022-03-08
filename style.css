@@ -192,3 +192,7 @@ button:hover{
 #tituloEs{
   color: rgb(0, 0, 0);
 }
+
+#envioText{
+  text-align: center;
+}

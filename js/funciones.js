@@ -10,7 +10,7 @@ function productsUI(products) {
       
        divProducts.innerHTML = `<img id="images" src='${Item.img}'>
                                 <h2 id='textProd'>${Item.nombre}</h2>
-                                <label>Size:&nbsp</label><select><option>38</option><option>39</option><option>40</option><option>41</option></select>
+                                <label>Size:&nbsp</label><select><option>Select</option><option>38</option><option>39</option><option>40</option><option>41</option></select>
                                 <h3 id='textPrecio'>$ ${Item.precio}</h3>
                                 <h6>${Item.tag}</h6>
                                 <button id="${Item.id}" class = "btnShop">Comprar</button>
@@ -37,6 +37,7 @@ function seleccionarProducto(){
            }
            localStorage.setItem('Carrito', JSON.stringify(carrito));
            carritoHTML(carrito);
+           totalCarrito();
            Toastify({
                     text: ` ✅ ${selection.nombre} Added to Cart`,
                     duration: 2000,
@@ -64,6 +65,11 @@ function carritoHTML(lista) {
         }
 }
 
+function totalCarrito() {
+  let total = carrito.reduce((totalCompra, actual) => totalCompra += actual.subTotal(), 0);
+  totalCarritoInterfaz.innerHTML= "Total: $"+total;
+  return total;
+}
 
 //FILTROS
 const filtroNombre = document.getElementById ('filtroNombre');
