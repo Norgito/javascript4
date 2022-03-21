@@ -219,11 +219,11 @@ confirmar.onclick = () => {
                     .then((respuesta) => respuesta.json())
                     .then((data) => {
                       Swal.fire(
-                        "Thank You!",
-                        "ORDER N° " + data.id + " ON THE WAY",
+                        "Compra Finalizada",
+                        "ORDEN N° " + data.id + " EN CAMINO",
                         "success"
                       ).then(function () {
-                        window.location = "/index.html";
+                        window.location = "https://norgito.github.io/javascript4/";
                       });
                     });
                 };
