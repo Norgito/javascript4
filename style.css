@@ -180,6 +180,7 @@ button:hover {
 .home {
   display: flex;
   position: relative;
+  margin-top: 100px;
 }
 
 .textobanner {
