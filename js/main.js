@@ -62,8 +62,8 @@ confirmar.onclick = () => {
               <div class="card-contenedor">
                   <div class="front">
                       <div class="imagen">
-                          <img src="/assets/img/chip.png" alt="">
-                          <img src="/assets/img/visa.png" alt="">
+                          <img src="https://i.ibb.co/zZGG87S/chip.png" alt="">
+                          <img src="https://i.ibb.co/xXGdV6S/visa.png" alt="">
                       </div>
                       <div class="card-number-box">################</div>
                       <div class="flexbox">
@@ -85,7 +85,7 @@ confirmar.onclick = () => {
                       <div class="box">
                           <span>cvv</span>
                           <div class="cvv-box"></div>
-                          <img src="/assets/img/visa.png" alt="">
+                          <img src="https://i.ibb.co/xXGdV6S/visa.png" alt="">
                       </div>
                   </div>
               </div>
