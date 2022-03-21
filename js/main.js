@@ -219,7 +219,7 @@ confirmar.onclick = () => {
                     .then((respuesta) => respuesta.json())
                     .then((data) => {
                       Swal.fire(
-                        "Compra Finalizada",
+                        "Compra Exitosa",
                         "ORDEN N° " + data.id + " EN CAMINO",
                         "success"
                       ).then(function () {
