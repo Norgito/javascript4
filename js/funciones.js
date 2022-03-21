@@ -9,7 +9,7 @@ function productsUI(products) {
     divProducts.innerHTML = `
        <section id="prod">
        <div class="contenedor">
-         <div class="card bg-transparent">
+         <div class="card ">
            <div class="imgBx">
              <img src="${Item.img}">
              <h4 class="textCard">${Item.nombre}</h4>

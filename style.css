@@ -269,6 +269,14 @@ button:hover {
   text-align: center;
 }
 
+.ProductHead p {
+  margin-bottom: -16px !important;
+}
+
+.ProductHead p {
+  margin-top: 15px;
+}
+
 #product1 .pro {
   width: 23%;
   min-width: 250px;
@@ -353,8 +361,12 @@ button:hover {
 }
 
 /* ------ CAROUSEL ------- */
+.carouselFotos {
+  padding-top: 50px;
+}
 .carousel__contenedor {
   position: relative;
+  margin-top: 50px;
 }
 
 .carousel__anterior,
@@ -465,13 +477,14 @@ button:hover {
 
 .contenedor .card {
   position: relative;
+  background-image: url(/assets/img/cardbg.png);
   width: 300px;
   height: 400px;
   margin: 20px 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 10px 25px rgba(34, 32, 32, 0.2);
+  box-shadow: 0 10px 25px rgba(34, 32, 32, 0.3);
   backdrop-filter: blur(65px);
 }
 
