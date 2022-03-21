@@ -6,31 +6,31 @@ carousel.innerHTML = `<div class="carousel__contenedor">
 <div class="carousel__lista">
 
  <div class="carousel__elemento">
-     <img src="/assets/img/c01.png" alt="">
+     <img src="https://i.ibb.co/G3HccBT/c01.png" alt="">
 
  </div>
 
  <div class="carousel__elemento">
-      <img src="/assets/img/c02.png" alt="">
+      <img src="https://i.ibb.co/Sn6nH84/c03.png" alt="">
  </div>
 
  <div class="carousel__elemento">
-      <img src="/assets/img/c03.png" alt="">
-
- </div>
-
- <div class="carousel__elemento">
-      <img src="/assets/img/c04.png" alt="">
+      <img src="https://i.ibb.co/f4FpyB3/c02.png" alt="">
 
  </div>
 
  <div class="carousel__elemento">
-  <img src="/assets/img/c05.png" alt="">
+      <img src="https://i.ibb.co/TPBR9Nq/c04.png" alt="">
 
  </div>
 
  <div class="carousel__elemento">
-  <img src="/assets/img/c06.png" alt="">
+  <img src="https://i.ibb.co/hghzGp4/c05.png" alt="">
+
+ </div>
+
+ <div class="carousel__elemento">
+  <img src="https://i.ibb.co/9rY8YHx/c06.png" alt="">
 
  </div>
 </div><hr>
