@@ -13,10 +13,14 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>SHOP</title>
   </head>
   <body>
+
     <!--NAVIGATION-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
       <div class="container">
@@ -33,10 +37,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            
+          <ul id="navbar" class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Shop</a>
@@ -45,10 +48,10 @@
                 <a class="nav-link" href="#">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#">Contacto</a>
               </li>
               <li class="nav-item">
                 <i class="fal fa-search"></i>
@@ -59,44 +62,67 @@
       </div>
     </nav>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <!-- MODAL -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content">
+    <div id="tarjeta" class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Shooping Cart</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
+        
       </div>
+      <section id="cart-container" class="container-fluid">
+        <h2 class="shoopingCart"><i class="fa fa-shopping-cart" style="font-size:36px"></i> Carrito <i class="fa fa-shopping-cart" style="font-size:36px"></i></h2><hr>
+        <table width="100%">
+          <thead>
+            <tr>
+              <td>Imagen</td>
+              <td>Producto</td>
+              <td>Precio</td>
+              <td>Subtotal</td>
+              <td>Cantidad</td>
+              <td>Add/Sub/Del</td>
+            </tr>
+          </thead>
+          </table>
+          </section>
+
+          
+      
+      
       <div id="productosCarrito" class="modal-body totalCarrito">
+        
         <!--Carrito desde JS-->
       </div>
+      
       <div class="modal-footer">
-        <p id="totalCarrito"> </p>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button id="confirmar" type="button" class="btn btn-primary">Confirm</button>
+ 
+          <p id="totalCarrito"> </p>
+      
+        <button id="confirmar" type="button" class="btn btn-primary">Proceder a Comprar</button>
       </div>
     </div>
   </div>
-</div>
+    </div>
 
+     <!--BANNER-->
     <section class="home container-fluid col-xs-12">
         <img src="assets/img/bannershoes.png" class="img-fluid" alt="Responsive image">
 
         <div class="textobanner">
-            <h3 id="tituloEs">SPORT SHOES FOR MEN</h3>
-            <h1>SEASON SALE</h1>
-            <h3>UP TO 50% OFF!</h3>
-            <button id="btnEs">Shop Now</button>
+          <h3 id="tituloEs">ZAPATILLAS DEPORTIVAS PARA EL</h3>
+          <h1>OFERTA DE TEMPORADA</h1>
+          <h3>HASTA 50% OFF!</h3>
+          <button id="btnEs">Shop Now</button>
         </div>
     </section>
-    
+
+    <!--FILTERS-->
     <section class="productos">
   
         <div class="filtroNombre">
-            <h5>Filtrar por Nombre</h5>
-            <input id="filtroNombre" type ='text'>
+            <input id="filtroNombre" type ='text' placeholder="BUSCAR POR NOMBRE">
             <button id="limpiar">Clear</button>
          </div>
   
@@ -105,14 +131,29 @@
     </div><hr>
     </section>
 
-    <section class="home container col-xs-12 align-items-lg-center p-lg-2">
-         <div id="bsItems" class="row mx-auto">
-      
-         </div>
+    <!--TEXT 1-->
+    <section class="ProductHead">
+      <h2>Productos Destacados</h2>
+       <p> ☀️ Lo Mas Hot, Temporada Verano 2022  ☀️</p>
     </section>
 
-    <!--Scripts-->
-    
+    <!--PRODUCTS-->
+    <section class="home container mx-auto col-xs-12 ">
+         <div id="bsItems" class="row d-flex justify-content-between"></div>
+    </section>
+
+     <!--TEXT 2-->
+    <section class="ProductHead"><br><br>
+      <h2>Zapatillas para Ellas</h2>
+       <p> ☀️ Ultimo trend verano 2022 ☀️</p>
+    </section>
+  
+     <!--CAROUSEL-->
+    <div id="carouselFotos" class="carousel container">
+    </div>
+ 
+
+    <!--SCRIPTS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
       crossorigin="anonymous"></script>
@@ -121,9 +162,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script src="js/globales.js"></script>
     <script src="js/funciones.js"></script>
     <script src="js/producto.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/carousel.js"></script>
+    
   </body>
 </html>

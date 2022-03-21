@@ -1,8 +1,9 @@
-[{"id":1,"nombre":"Nike Air Zoom","precio":3000,"tag":"Running","img":"assets/img/running-01.png","cantidad":1},
-{"id":2,"nombre":"Nike Pegasus","precio":3000,"tag":"Running","img":"assets/img/running-02.png","cantidad":1},
-{"id":3,"nombre":"Nike React","precio":4000,"tag":"Walking","img":"assets/img/walking-01.png","cantidad":1},
-{"id":4,"nombre":"Nike Flex","precio":4000,"tag":"Walking","img":"assets/img/walking-02.png","cantidad":1},
-{"id":5,"nombre":"Nike Vapor","precio":5000,"tag":"Football","img":"assets/img/football-01.png","cantidad":1},
-{"id":6,"nombre":"Nike Alpha","precio":5000,"tag":"Football","img":"assets/img/football-02.png","cantidad":1},
-{"id":7,"nombre":"Nike Renew","precio":6000,"tag":"Training Gym","img":"assets/img/gym-01.png","cantidad":1},
-{"id":8,"nombre":"Nike SuperRep","precio":6000,"tag":"Training Gym","img":"assets/img/gym-02.png","cantidad":1}]
+[{"id":1,"nombre":"Nike Air Zoom","precio":3000,"tag":"🏃‍♂️ Running 🏃‍♂️","img":"assets/img/running-01.png","cantidad":1},
+{"id":2,"nombre":"Nike Pegasus","precio":3000,"tag":"🏃‍♂️ Running 🏃‍♂️","img":"assets/img/running-02.png","cantidad":1},
+{"id":3,"nombre":"Nike React","precio":3000,"tag":"🏃‍♂️ Running 🏃‍♂️","img":"assets/img/walking-01.png","cantidad":1},
+{"id":4,"nombre":"Nike Flex","precio":5000,"tag":"🚶‍♂️ Walking 🚶‍♂️","img":"assets/img/walking-02.png","cantidad":1},
+{"id":5,"nombre":"Nike Vapor","precio":5000,"tag":"🚶‍♂️ Walking 🚶‍♂️","img":"assets/img/football-01.png","cantidad":1},
+{"id":6,"nombre":"Nike Alpha","precio":5000,"tag":"🚶‍♂️ Walking 🚶‍♂️","img":"assets/img/football-02.png","cantidad":1},
+{"id":7,"nombre":"Nike Renew","precio":7000,"tag":"🏋️‍♂️ Training Gym 🏋️‍♂️","img":"assets/img/gym-01.png","cantidad":1},
+{"id":8,"nombre":"Nike SuperRep","precio":7000,"tag":"🏋️‍♂️ Training Gym 🏋️‍♂️","img":"assets/img/gym-02.png","cantidad":1},
+{"id":9,"nombre":"Nike Jump","precio":7000,"tag":"🏋️‍♂️ Training Gym 🏋️‍♂️","img":"assets/img/gym-03.png","cantidad":1}]
